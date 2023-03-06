@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    /* padding: 5px; */
+}
+body{
+    background-color: black;
+}
+.grid-container{
+    border-radius: 25px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, );
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas: 
+        'primera-img segunda-img segunda-img'
+        'tercera-img tercera-img cuarta-img'
+        'quinta-img sexta-img septima-img'
+        ;
+}
+.item{
+    border-radius: 25px;
+    border: 2px solid rgba(255, 0, 0, 0.295);
+
+    /* border: 3px solid greenyellow;
+    padding: 3xp; */
+    font-size: 4rem;
+}
+.item-1{
+    border-radius: 25px;
+
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/anime-demon-slayer-kimetsu-no-yaiba-kimetsu-no-yaiba-tanjirou-kamado-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    background-color: yellow;
+    grid-area: primera-img;
+
+}
+.item-2{
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/anime-demon-slayer-kimetsu-no-yaiba-kokushibou-demon-slayer-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: segunda-img;
+    background-color: rgb(5, 203, 5);
+
+}
+.item-3{
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/anime-demon-slayer-kimetsu-no-yaiba-tanjirou-kamado-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    grid-area: tercera-img;
+}
+.item-4{
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/1008472.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: cuarta-img;
+}
+.item-5{
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/kimetsu-no-yaiba-ogon-parni-devushka.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area:  quinta-img;
+}
+.item-6{
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/kimetsu-no-yaiba-tanjiro-kamado-kamado-tanjirō-zenitsu-agatsuma-inosuke-hashibira-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: sexta-img;
+}
+.item-7{
+    background-image: url('/Kimetsu-No-Yaiba-Background/img/ultiima.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: septima-img;
+}
